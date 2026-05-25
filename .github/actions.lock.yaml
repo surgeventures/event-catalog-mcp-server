@@ -1,0 +1,48 @@
+version: 1
+generated_at: 2026-05-25T13:33:01Z
+internal: []
+trusted:
+  - action: actions/checkout
+    refs:
+      - v4
+    occurrences:
+      v4:
+        .github/workflows/lint.yml:
+          - jobs.lint.steps.[0].uses
+        .github/workflows/release.yml:
+          - jobs.release.steps.[0].uses
+        .github/workflows/verify-build.yml:
+          - jobs.build.steps.[0].uses
+  - action: actions/setup-node
+    refs:
+      - v4
+    occurrences:
+      v4:
+        .github/workflows/lint.yml:
+          - jobs.lint.steps.[2].uses
+        .github/workflows/release.yml:
+          - jobs.release.steps.[2].uses
+        .github/workflows/verify-build.yml:
+          - jobs.build.steps.[2].uses
+external:
+  - action: changesets/action
+    refs:
+      - master
+    occurrences:
+      master:
+        .github/workflows/release.yml:
+          - jobs.release.steps.[4].uses
+  - action: pnpm/action-setup
+    refs:
+      - v4
+    occurrences:
+      v4:
+        .github/workflows/lint.yml:
+          - jobs.lint.steps.[1].uses
+        .github/workflows/release.yml:
+          - jobs.release.steps.[1].uses
+        .github/workflows/verify-build.yml:
+          - jobs.build.steps.[1].uses
+local: []
+docker: []
+dynamic: []
