@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-05-25T13:33:01Z
+generated_at: 2026-06-01T09:34:04Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -34,9 +34,9 @@ external:
           - jobs.release.steps.[4].uses
   - action: pnpm/action-setup
     refs:
-      - v4
+      - b906affcce14559ad1aafd4ab0e942779e9f58b1
     occurrences:
-      v4:
+      b906affcce14559ad1aafd4ab0e942779e9f58b1:
         .github/workflows/lint.yml:
           - jobs.lint.steps.[1].uses
         .github/workflows/release.yml:
