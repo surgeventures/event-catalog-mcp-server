@@ -1,12 +1,12 @@
 version: 1
-generated_at: 2026-06-01T09:34:04Z
+generated_at: 2026-06-11T15:38:12Z
 internal: []
 trusted:
   - action: actions/checkout
     refs:
-      - v4
+      - 34e114876b0b11c390a56381ad16ebd13914f8d5
     occurrences:
-      v4:
+      34e114876b0b11c390a56381ad16ebd13914f8d5:
         .github/workflows/lint.yml:
           - jobs.lint.steps.[0].uses
         .github/workflows/release.yml:
@@ -15,9 +15,9 @@ trusted:
           - jobs.build.steps.[0].uses
   - action: actions/setup-node
     refs:
-      - v4
+      - 49933ea5288caeca8642d1e84afbd3f7d6820020
     occurrences:
-      v4:
+      49933ea5288caeca8642d1e84afbd3f7d6820020:
         .github/workflows/lint.yml:
           - jobs.lint.steps.[2].uses
         .github/workflows/release.yml:
